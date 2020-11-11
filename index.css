@@ -99,3 +99,8 @@ button{
     color: blue;
     border: 2px solid white;
 }
+dialog{
+    border: 1px solid black;
+    color: blue;
+    font-family: sans-serif;
+}
