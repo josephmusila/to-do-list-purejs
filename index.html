@@ -7,7 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
+    <!-- 
+        
+        this project was tested on three different browsers  
+ 
 
+        ****chrome****
+        ****opera*****
+        ****firefox****
+
+        some cross-browser issues have been indicated in the comments within the codes
+    
+     -->
 <body>
     <div id="root">
         <header>
@@ -20,10 +31,16 @@
         <div id="task-list">
         </div>
         <div id="task-count">
-            <p>Task Count: <span id="count"></span></p>
+            <p>Task Count: <span id="count">0</span></p>
         </div>
     </div>
-    <!--  dialog -->
+    <!-- 
+         dialog 
+         for chrome and opera
+
+         see  EmptyTask.js
+        
+        -->
     <dialog id="dial">
         <p>
             Cannot add an empty task
@@ -34,6 +51,8 @@
     <script src="date.js" type="module"></script>
     <script src="AddTask.js" type="module"></script>
     <script src="Nodes.js" type="module"></script>
+    <script src="EmptyTask.js" type="module"></script>
+    <script src="EmptyTask.js" type="module"></script>
     <script src="EmptyTask.js" type="module"></script>
 </body>
 

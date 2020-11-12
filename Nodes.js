@@ -8,8 +8,8 @@ let Nodes = () => {
 	let para2 = document.createElement("p2");
 	let para3 = document.createElement("p3");
 
-    //append tasks
-	para3.innerHTML = "Added On" +  dateCreated;
+	//append tasks
+	para3.innerHTML = "Added On" + dateCreated;
 	para2.innerHTML = "X";
 	para2.classList.add("x-button");
 	div.classList.add("newtask");
@@ -23,15 +23,21 @@ let Nodes = () => {
 	document.getElementById("task").value = "";
 	/* task.reset(); */
 	/* console.log(task); */
+
+	//show and count  number of tasks
+	let TasCounter = () => {
+		let pare = document.getElementById("task-list");
+		let count = document.getElementById("count");
+
+		let countt = pare.childElementCount;
+		count.innerHTML = countt;
+	};
+ TasCounter();// thhis function will count the number of tasks before they are deleted.....
 	//delete tasks
+
 	para2.addEventListener("click", () => {
 		div.remove();
-    });
-    
-	//show number of tasks
-	let pare = document.getElementById("task-list");
-	let count = document.getElementById("count");
-	let countt = pare.childElementCount;
-	count.innerHTML = countt;
+		TasCounter();//this function will count the number of tasks after deletion.....
+	});
 };
 export { Nodes };
